@@ -27,6 +27,7 @@ public class LoginActivity extends AppCompatActivity {
         btnAcessarListaMensagens = findViewById(R.id.btnAcessarListaMensagens);
 
         Cpf = editCpf.getText().toString();
+
         btnAcessarListaMensagens.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

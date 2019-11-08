@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-
+    android:background="#ffffff"
     tools:context=".view.LoginActivity">
 
 
@@ -25,7 +25,6 @@
             android:layout_height="20dp"
             android:src="@drawable/logo_correios"
 
-
             />
 
     </LinearLayout>
@@ -37,14 +36,25 @@
         android:orientation="vertical"
         android:padding="16dp">
 
+
+        <ImageView
+            android:layout_width="40pt"
+            android:layout_height="40pt"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:src="@drawable/user"
+            android:id="@+id/imgUsuario"
+
+            />
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="80dp"
             android:gravity="center"
-
             android:hint="Digite o seu CPF e clique em entrar"
             android:textSize="18sp"
+            android:id="@+id/editCpf"
 
             />
 
@@ -52,11 +62,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
-
             style="@style/button"
-            android:onClick="acessarMensagens"
             android:text="Entrar"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:id="@+id/btnAcessarListaMensagens"/>
 
     </LinearLayout>
 

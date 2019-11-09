@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@drawable/fundo_item_listview_emissor"
+    >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="9"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:layout_marginLeft="25dp"
+        >
+
+        <ImageView
+            android:id="@+id/ivEmissor"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:src="@drawable/logo_santander"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/ivEnvelopeAmarelo"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:src="@drawable/envelope_fechado_santander" />
+
+        <TextView
+            android:id="@+id/tvNuMensagem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="-14dp"
+            android:text="2"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

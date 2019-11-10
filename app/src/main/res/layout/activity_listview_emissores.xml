@@ -21,12 +21,13 @@
             android:layout_height="20dp"
             android:layout_gravity="center"
             android:background="@drawable/botao_voltar_azul"
+            android:onClick="voltarTelaCpf"
             android:id="@+id/btnVoltar"
             />
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="wrap_content"
             android:text="Minhas Mensagens"
             android:layout_gravity="center"
             android:gravity="center"
@@ -42,6 +43,8 @@
         <ListView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:divider="#0083ca"
+            android:dividerHeight="1dp"
             android:id="@+id/lvEmissores"
 
             />

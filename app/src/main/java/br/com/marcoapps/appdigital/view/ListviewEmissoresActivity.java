@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -15,12 +17,12 @@ import br.com.marcoapps.appdigital.model.Mensagem;
 
 public class ListviewEmissoresActivity extends AppCompatActivity {
 
-
+    private Activity activity;
     private ListView lvEmissores;
+    private Button btnVoltar;
 
     private List<Mensagem> listMensagens;
     private AdapterMensagem adapterMensagem;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,9 +30,10 @@ public class ListviewEmissoresActivity extends AppCompatActivity {
         setContentView(R.layout.activity_listview_emissores);
 
         lvEmissores = findViewById(R.id.lvEmissores);
+        btnVoltar = findViewById(R.id.btnVoltar);
         configListView();
-    }
 
+    }
 
     private void configListView() {
 
@@ -44,5 +47,10 @@ public class ListviewEmissoresActivity extends AppCompatActivity {
 
     }
 
+
+    public void voltarTelaCpf(View v){
+
+        this.finish();
+    }
 
 }

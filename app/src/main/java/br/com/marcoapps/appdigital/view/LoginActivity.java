@@ -32,7 +32,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 if (validarCpf(Cpf)){
 
-                    Intent intent = new Intent(getApplicationContext(), ListaEmissoresActivity.class);
+                    Intent intent = new Intent(getApplicationContext(), ListviewEmissoresActivity.class);
                     intent.putExtra("cpf", Cpf);
                     startActivity(intent);
 
@@ -41,15 +41,11 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-
     }
 
 
     private boolean validarCpf(String cpf) {
-
         return true;
     }
-
-
 
 }

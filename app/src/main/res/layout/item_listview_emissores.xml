@@ -33,7 +33,7 @@
         >
 
         <ImageView
-            android:id="@+id/ivEnvelopeAmarelo"
+            android:id="@+id/ivEnvelopeFechadoSantander"
             android:layout_width="68dp"
             android:layout_height="68dp"
             android:src="@drawable/envelope_fechado_santander" />
@@ -44,7 +44,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="-14dp"
-            android:text="2"
+            android:text="0"
             android:textColor="#ffffff"
             android:textSize="12sp" />
     </LinearLayout>

@@ -15,7 +15,7 @@ import br.com.marcoapps.appdigital.R;
 import br.com.marcoapps.appdigital.model.AdapterMensagem;
 import br.com.marcoapps.appdigital.model.Mensagem;
 
-public class ListviewEmissoresActivity extends AppCompatActivity {
+public class ListViewEmissoresActivity extends AppCompatActivity {
 
     private Activity activity;
     private ListView lvEmissores;

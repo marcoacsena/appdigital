@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".view.ListViewEmissoresActivity">
+    tools:context=".view.RecyclerViewEmissoresActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -40,16 +40,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ListView
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvEmissores"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:divider="#0083ca"
-            android:dividerHeight="1dp"
-            android:id="@+id/lvEmissores"
-
-            />
-
-
+            android:layout_height="match_parent" />
     </LinearLayout>
 
 </LinearLayout>

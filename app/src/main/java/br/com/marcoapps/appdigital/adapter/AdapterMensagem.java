@@ -1,4 +1,4 @@
-package br.com.marcoapps.appdigital.model;
+package br.com.marcoapps.appdigital.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -11,6 +11,7 @@ import android.widget.TextView;
 import java.util.List;
 
 import br.com.marcoapps.appdigital.R;
+import br.com.marcoapps.appdigital.model.Mensagem;
 
 public class AdapterMensagem extends BaseAdapter {
 

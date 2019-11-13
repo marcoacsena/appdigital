@@ -32,7 +32,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 if (validarCpf(Cpf)){
 
-                    Intent intent = new Intent(getApplicationContext(), ListViewEmissoresActivity.class);
+                    Intent intent = new Intent(getApplicationContext(), RecyclerViewEmissoresActivity.class);
                     intent.putExtra("cpf", Cpf);
                     startActivity(intent);
 

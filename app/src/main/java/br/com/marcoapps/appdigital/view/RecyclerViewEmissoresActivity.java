@@ -1,6 +1,7 @@
 package br.com.marcoapps.appdigital.view;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -12,13 +13,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 import br.com.marcoapps.appdigital.R;
-import br.com.marcoapps.appdigital.model.AdapterMensagem;
+import br.com.marcoapps.appdigital.adapter.AdapterMensagem;
 import br.com.marcoapps.appdigital.model.Mensagem;
 
-public class ListViewEmissoresActivity extends AppCompatActivity {
+public class RecyclerViewEmissoresActivity extends AppCompatActivity {
 
     private Activity activity;
-    private ListView lvEmissores;
+    private RecyclerView rvEmissores;
     private Button btnVoltar;
 
     private List<Mensagem> listMensagens;
@@ -27,9 +28,9 @@ public class ListViewEmissoresActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_listview_emissores);
+        setContentView(R.layout.activity_recycler_emissores);
 
-        lvEmissores = findViewById(R.id.lvEmissores);
+        rvEmissores = findViewById(R.id.rvEmissores);
         btnVoltar = findViewById(R.id.btnVoltar);
         configListView();
 
@@ -43,7 +44,7 @@ public class ListViewEmissoresActivity extends AppCompatActivity {
         listMensagens.add(new Mensagem("Santander", "2"));
 
         adapterMensagem = new AdapterMensagem(listMensagens, getApplicationContext());
-        lvEmissores.setAdapter(adapterMensagem);
+        rvEmissores.setAdapter(adapterMensagem);
 
     }
 

@@ -2,7 +2,6 @@ package br.com.marcoapps.appdigital.model;
 
 public class Cliente {
 
-
     private String cpf;
 
     public Cliente() {

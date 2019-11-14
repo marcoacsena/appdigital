@@ -17,10 +17,10 @@ import br.com.marcoapps.appdigital.model.ConfiguracaoMensagem;
 public class AdapterListaMensagem extends RecyclerView.Adapter<AdapterListaMensagem.ConfiguracaoMensagemViewHolder>{
 
 
-    private List<ConfiguracaoMensagem> listaConfiguracaoDeMensagem;
+    private List<ConfiguracaoMensagem> listaConfiguracaoDeMensagens;
 
-    public AdapterListaMensagem(List<ConfiguracaoMensagem> listaConfiguracaoDeMensagem) {
-        this.listaConfiguracaoDeMensagem = listaConfiguracaoDeMensagem;
+    public AdapterListaMensagem(List<ConfiguracaoMensagem> listaConfiguracaoDeMensagens) {
+        this.listaConfiguracaoDeMensagens = listaConfiguracaoDeMensagens;
     }
 
     @NonNull
@@ -36,7 +36,7 @@ public class AdapterListaMensagem extends RecyclerView.Adapter<AdapterListaMensa
     @Override
     public void onBindViewHolder(@NonNull ConfiguracaoMensagemViewHolder holder, int position) {
 
-        ConfiguracaoMensagem configuracaoMensagem = listaConfiguracaoDeMensagem.get(position);
+        ConfiguracaoMensagem configuracaoMensagem = listaConfiguracaoDeMensagens.get(position);
         holder.tvTipoDocumento.setText(configuracaoMensagem.getTipoFormulario());
         holder.tvCidadeEmissorDocumento.setText(configuracaoMensagem.getCidadeDoEmissor());
         holder.tvDataDocumento.setText(configuracaoMensagem.getDataDoDocumento());
@@ -46,7 +46,7 @@ public class AdapterListaMensagem extends RecyclerView.Adapter<AdapterListaMensa
 
     @Override
     public int getItemCount() {
-        return listaConfiguracaoDeMensagem.size();
+        return listaConfiguracaoDeMensagens.size();
     }
 
     public class ConfiguracaoMensagemViewHolder extends RecyclerView.ViewHolder{

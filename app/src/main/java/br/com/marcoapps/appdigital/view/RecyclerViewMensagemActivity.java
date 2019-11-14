@@ -6,12 +6,9 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.Activity;
-import android.icu.lang.UCharacter;
 import android.os.Bundle;
 
 import android.view.View;
-import android.widget.Adapter;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
@@ -25,10 +22,10 @@ import br.com.marcoapps.appdigital.model.ConfiguracaoMensagem;
 public class RecyclerViewMensagemActivity extends AppCompatActivity {
 
     private Activity activity;
-    private RecyclerView recyclerView;
+    private RecyclerView rvMensagem;
     private Button btnVoltarTelaEmissores;
     private ConfiguracaoMensagem configuracaoMensagem;
-    List<ConfiguracaoMensagem> listaConfiguracaoDeMensagem = new ArrayList<>();
+    private List<ConfiguracaoMensagem> listaConfiguracaoDeMensagens = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,36 +33,35 @@ public class RecyclerViewMensagemActivity extends AppCompatActivity {
         setContentView(R.layout.activity_recycler_view_mensagem);
 
         btnVoltarTelaEmissores = findViewById(R.id.btnVoltarTelaEmissores);
-
-//        recyclerView =findViewById(R.id.recyclerViewMensagem);
+        rvMensagem =findViewById(R.id.rvMensagem);
 //
 //        //Criar lista de filmes
-//        //criarListaConfiguracaoDeMensagem();
+          criarListaConfiguracaoDeMensagens();
 //
-//        //Configurar adapter
-//        AdapterListaMensagem adapterListaMensagem= new AdapterListaMensagem(listaConfiguracaoDeMensagem);
+        //Configurar adapter
+        AdapterListaMensagem adapterListaMensagem= new AdapterListaMensagem(listaConfiguracaoDeMensagens);
 //
-//        //Configurar recyclerview
-//        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getApplicationContext());
-//
-//        recyclerView.setLayoutManager(layoutManager);
-//        recyclerView.setHasFixedSize(true);
-//        recyclerView.addItemDecoration(new DividerItemDecoration(this, LinearLayout.VERTICAL));
-//        recyclerView.setAdapter(adapterListaMensagem);
+        //Configurar recyclerview
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getApplicationContext());
+
+        rvMensagem.setLayoutManager(layoutManager);
+        rvMensagem.setHasFixedSize(true);
+        rvMensagem.addItemDecoration(new DividerItemDecoration(this, LinearLayout.VERTICAL));
+        rvMensagem.setAdapter(adapterListaMensagem);
 
     }
 
-//    private void criarListaConfiguracaoDeMensagem() {
-//
-//        configuracaoMensagem = new ConfiguracaoMensagem("Notificação", "São Paulo", "30 de janeiro de 2019", "17/09/2019");
-//        listaConfiguracaoDeMensagem.add(configuracaoMensagem);
-//        configuracaoMensagem = new ConfiguracaoMensagem("Notificação", "Brasília", "25 de junho de 2019", "05/05/2019");
-//        listaConfiguracaoDeMensagem.add(configuracaoMensagem);
-//        configuracaoMensagem = new ConfiguracaoMensagem("Notificação", "Belém", "10 de Abril de 2019", "09/03/2019");
-//        listaConfiguracaoDeMensagem.add(configuracaoMensagem);
-//        configuracaoMensagem = new ConfiguracaoMensagem("Notificação", "Rio De Janeiro", "15 de março de 2019", "20/02/2019");
-//        listaConfiguracaoDeMensagem.add(configuracaoMensagem);
-//    }
+    private void criarListaConfiguracaoDeMensagens() {
+
+        configuracaoMensagem = new ConfiguracaoMensagem("Notificação", "São Paulo", "30 de janeiro de 2019", "17/09/2019");
+        listaConfiguracaoDeMensagens.add(configuracaoMensagem);
+        configuracaoMensagem = new ConfiguracaoMensagem("Notificação", "Brasília", "25 de junho de 2019", "05/05/2019");
+        listaConfiguracaoDeMensagens.add(configuracaoMensagem);
+        configuracaoMensagem = new ConfiguracaoMensagem("Notificação", "Belém", "10 de Abril de 2019", "09/03/2019");
+        listaConfiguracaoDeMensagens.add(configuracaoMensagem);
+        configuracaoMensagem = new ConfiguracaoMensagem("Notificação", "Rio De Janeiro", "15 de março de 2019", "20/02/2019");
+        listaConfiguracaoDeMensagens.add(configuracaoMensagem);
+    }
 
     public void voltarTelaEmissores(View v){
 

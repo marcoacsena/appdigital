@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".view.RecyclerViewEmissoresActivity">
+    tools:context=".view.RecyclerViewMensagemActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -40,7 +40,7 @@
         android:layout_height="match_parent">
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerViewMensagem"
+            android:id="@+id/rvMensagem"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
     </LinearLayout>

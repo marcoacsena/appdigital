@@ -34,7 +34,7 @@ public class RecyclerViewEmissoresActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recycler_view_emissores);
 
-        rvEmissores = findViewById(R.id.recyclerViewMensagem);
+        rvEmissores = findViewById(R.id.rvMensagem);
         btnVoltarTelaLogin = findViewById(R.id.btnVoltarTelaLogin);
 
 
@@ -42,7 +42,6 @@ public class RecyclerViewEmissoresActivity extends AppCompatActivity {
         //criarListaDeMensagens();
 
         //Configurar adapter
-
         AdapterMensagem adapterMensagem = new AdapterMensagem();
 
         //Configurar recyclerview

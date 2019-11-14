@@ -35,13 +35,14 @@
             android:src="@drawable/envelope_fechado_santander" />
 
         <TextView
-            android:id="@+id/tvNuMensagem"
+            android:id="@+id/tvNuMensagens"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="-20dp"
+
+            android:layout_marginLeft="-22dp"
             android:text="0"
             android:textColor="#ffffff"
-            android:textSize="12sp" />
+            android:textSize="10sp" />
     </LinearLayout>
 
 </LinearLayout>

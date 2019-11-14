@@ -17,13 +17,12 @@
         >
 
         <Button
-            android:layout_width="20dp"
+            android:id="@+id/btnVoltar"
+            android:layout_width="13dp"
             android:layout_height="20dp"
             android:layout_gravity="center"
             android:background="@drawable/botao_voltar_azul"
-            android:onClick="voltarTelaCpf"
-            android:id="@+id/btnVoltar"
-            />
+            android:onClick="voltarTelaLogin" />
 
         <TextView
             android:layout_width="match_parent"

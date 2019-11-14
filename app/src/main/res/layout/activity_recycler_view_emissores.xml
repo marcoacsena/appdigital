@@ -17,8 +17,8 @@
         >
 
         <Button
-            android:id="@+id/btnVoltar"
-            android:layout_width="13dp"
+            android:id="@+id/btnVoltarTelaLogin"
+            android:layout_width="15dp"
             android:layout_height="20dp"
             android:layout_gravity="center"
             android:background="@drawable/botao_voltar_azul"
@@ -40,7 +40,7 @@
         android:layout_height="match_parent">
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rvEmissores"
+            android:id="@+id/recyclerViewMensagem"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
     </LinearLayout>

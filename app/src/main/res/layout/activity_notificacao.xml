@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".view.NotificacaoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@drawable/linha_amarela"
+        android:padding="14dp"
+        >
+
+        <Button
+            android:id="@+id/btnVoltarTelaListaDeMensagens"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:background="@drawable/botao_voltar_azul"
+
+            android:onClick="voltarTelaListaDeMensagens" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="8"
+            android:gravity="center"
+
+            android:text="Minhas Mensagens" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:padding="10dp"
+        android:src="@drawable/logo_santander_financiamentosdois"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="14dp">
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Título"
+        android:textSize="16sp"
+        android:layout_marginBottom="12dp"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:id="@+id/tvNumeroDocumento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nº. do Documento"
+        android:textSize="14sp"
+
+        />
+    <TextView
+        android:id="@+id/tvNumeroProcesso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nº. do processo"
+        android:textSize="14sp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        >
+        <TextView
+            android:id="@+id/tvCidadeEmissor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="São Paulo/"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/tvUF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SP,"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:id="@+id/tvDataDocumento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 30 de janeiro de 2019."
+            android:textSize="14sp"
+            />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="start"
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+                android:id="@+id/tvTratamentoCliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sr. "
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:id="@+id/tvNomeCliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Robson"
+                android:textSize="16sp"
+                />
+            <TextView
+                android:id="@+id/tvSobreNomeCliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" da Encarnação."
+                android:textSize="16sp"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="start"
+
+            >
+            <TextView
+                android:id="@+id/tvCpfCnpj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CPF/CNPJ: "
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:id="@+id/tvNumeroCpfCnpj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="333111222-00"
+                android:textSize="14sp"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_gravity="end"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur facilisis, lacus at ornare eleifend, nisi sapien ultricies purus, quis fringilla metus leo et massa. Cras in sodales velit, id interdum tellus. Fusce sed urna condimentum, semper ex vitae, tristique nisl. Vestibulum imperdiet efficitur quam nec congue. Suspendisse cursus porta sem, eget aliquam sapien. Morbi tempus felis libero, vel euismod risus efficitur sed. Donec eros dui, facilisis in dui et, sollicitudin facilisis ante.
+
+
+
+            Praesent a eros lorem. Vestibulum nisi augue, ullamcorper at diam ullamcorper, sodales congue quam. Nunc sagittis at ex eu blandit. Morbi blandit ultricies tempor. Quisque ac nisi orci.
+
+ fringilla nisi vestibulum porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur maximus ex nisi, eu volutpat mi vestibulum et.
+" />
+
+
+    </LinearLayout>
+</LinearLayout>

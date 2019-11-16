@@ -10,7 +10,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="110dp"
+        android:layout_height="120dp"
         android:orientation="horizontal"
         android:background="@drawable/logo_santander_dois"
         android:padding="5dp"

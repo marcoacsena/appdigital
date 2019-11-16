@@ -18,7 +18,7 @@
 
         <Button
             android:id="@+id/btnVoltarTelaListaDeMensagens"
-            android:layout_width="10dp"
+            android:layout_width="15dp"
             android:layout_height="20dp"
             android:layout_weight="0.6"
             android:background="@drawable/botao_voltar_azul"

@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">appdigital</string>
+    <string name="texto_notificacao">
+        Informamos que até o momento não
+    acusamos o recebimento total da prestação
+    vencida em 80/01/2109, do contrato 20028574099.
+    Por esse motivo, solicitamos que o pagamento de
+    sua parcela seja realizado no prazo de 24 (vinte
+    e quatro horas), na rede cancária,
+    estabelecimentos conveniados ou acesse
+    www.santanderfinanciamentos.com.br, opção
+    negocie sua dívida, para evitar medidas judiciais.
+
+    Caso o pagamento já tenha tenha sido efetuado,
+    pedimos desconsiderar essa notificação.
+    </string>
+
 </resources>

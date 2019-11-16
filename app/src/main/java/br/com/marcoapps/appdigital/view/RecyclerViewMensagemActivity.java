@@ -6,11 +6,14 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,6 +21,7 @@ import java.util.List;
 import br.com.marcoapps.appdigital.R;
 import br.com.marcoapps.appdigital.adapter.AdapterListaMensagem;
 import br.com.marcoapps.appdigital.model.ConfiguracaoMensagem;
+import br.com.marcoapps.appdigital.uteis.RecyclerItemClickListener;
 
 public class RecyclerViewMensagemActivity extends AppCompatActivity {
 
@@ -49,6 +53,37 @@ public class RecyclerViewMensagemActivity extends AppCompatActivity {
         rvMensagem.addItemDecoration(new DividerItemDecoration(this, LinearLayout.VERTICAL));
         rvMensagem.setAdapter(adapterListaMensagem);
 
+        rvMensagem.addOnItemTouchListener(
+
+                new RecyclerItemClickListener(
+                        getApplicationContext(),
+                        rvMensagem,
+                        new RecyclerItemClickListener.OnItemClickListener() {
+                            @Override
+                            public void onItemClick(View view, int position) {
+
+                                Intent intent = new Intent(getApplicationContext(), NotificacaoActivity.class);
+
+                                startActivity(intent);
+                            }
+
+                            @Override
+                            public void onLongItemClick(View view, int position) {
+
+                                Toast.makeText(getApplicationContext(),
+                                        "Recurso clique Longo .... acionado", Toast.LENGTH_LONG).show();
+                            }
+
+                            @Override
+                            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
+                            }
+                        }
+                )
+
+        );
+
+
     }
 
     private void criarListaConfiguracaoDeMensagens() {
@@ -61,7 +96,11 @@ public class RecyclerViewMensagemActivity extends AppCompatActivity {
         listaConfiguracaoDeMensagens.add(configuracaoMensagem);
         configuracaoMensagem = new ConfiguracaoMensagem("Notificação", "Rio De Janeiro", "15 de março de 2019", "20/02/2019");
         listaConfiguracaoDeMensagens.add(configuracaoMensagem);
+
     }
+
+
+
 
     public void voltarTelaEmissores(View v){
 

@@ -28,7 +28,7 @@ public class AdapterListaMensagem extends RecyclerView.Adapter<AdapterListaMensa
     public ConfiguracaoMensagemViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
         View itemListaMensagem = LayoutInflater.from(parent.getContext()).
-                inflate(R.layout.item_listview_mensagens, parent, false);
+                inflate(R.layout.item_mensagem, parent, false);
 
         return new ConfiguracaoMensagemViewHolder(itemListaMensagem);
     }

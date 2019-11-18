@@ -52,7 +52,7 @@
             android:id="@+id/tvTituloDocumento"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="12dp"
+            android:layout_marginBottom="4dp"
             android:text="Título"
             android:textAlignment="center"
             android:textSize="16sp" />
@@ -70,7 +70,7 @@
             android:id="@+id/tvNumeroProcesso"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="8dp"
             android:text="Nº. do processo"
             android:textSize="14sp" />
 
@@ -131,7 +131,6 @@
                 android:text=" da Encarnação."
                 android:textSize="16sp" />
 
-
         </LinearLayout>
 
         <LinearLayout
@@ -162,7 +161,9 @@
             android:id="@+id/tvcorpoDoDocumento"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/texto_notificacao" />
+            android:text="@string/texto_notificacao"
+            android:layout_marginTop="10dp"
+            />
 
         <LinearLayout
             android:layout_width="match_parent"

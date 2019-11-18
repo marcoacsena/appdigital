@@ -88,18 +88,16 @@ public class RecyclerViewMensagemActivity extends AppCompatActivity {
 
     private void criarListaConfiguracaoDeMensagens() {
 
-        configuracaoMensagem = new ConfiguracaoMensagem("Notificação", "São Paulo", "30 de janeiro de 2019", "17/09/2019");
+        configuracaoMensagem = new ConfiguracaoMensagem("Notificação", "17/09/2019", "São Paulo, ", "30 de janeiro de 2019");
         listaConfiguracaoDeMensagens.add(configuracaoMensagem);
-        configuracaoMensagem = new ConfiguracaoMensagem("Notificação", "Brasília", "25 de junho de 2019", "05/05/2019");
+        configuracaoMensagem = new ConfiguracaoMensagem("Notificação", "05/05/2019", "Brasília, ", "25 de junho de 2019");
         listaConfiguracaoDeMensagens.add(configuracaoMensagem);
-        configuracaoMensagem = new ConfiguracaoMensagem("Notificação", "Belém", "10 de Abril de 2019", "09/03/2019");
+        configuracaoMensagem = new ConfiguracaoMensagem("Notificação", "09/03/2019", "Belém, ", "10 de Abril de 2019");
         listaConfiguracaoDeMensagens.add(configuracaoMensagem);
-        configuracaoMensagem = new ConfiguracaoMensagem("Notificação", "Rio De Janeiro", "15 de março de 2019", "20/02/2019");
+        configuracaoMensagem = new ConfiguracaoMensagem("Notificação", "20/02/2019", "Rio De Janeiro, ", "15 de março de 2019");
         listaConfiguracaoDeMensagens.add(configuracaoMensagem);
 
     }
-
-
 
 
     public void voltarTelaEmissores(View v){

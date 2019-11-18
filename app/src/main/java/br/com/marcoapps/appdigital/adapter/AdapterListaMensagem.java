@@ -3,7 +3,6 @@ package br.com.marcoapps.appdigital.adapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Adapter;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -28,7 +27,7 @@ public class AdapterListaMensagem extends RecyclerView.Adapter<AdapterListaMensa
     public ConfiguracaoMensagemViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
         View itemListaMensagem = LayoutInflater.from(parent.getContext()).
-                inflate(R.layout.item_mensagem, parent, false);
+                inflate(R.layout.item_recycler_view_mensagem, parent, false);
 
         return new ConfiguracaoMensagemViewHolder(itemListaMensagem);
     }

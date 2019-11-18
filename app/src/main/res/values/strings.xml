@@ -14,5 +14,6 @@
     Caso o pagamento já tenha tenha sido efetuado,
     pedimos desconsiderar essa notificação.
     </string>
+    <string name="digite_cpf_cnpj">Digite o seu CPF ou CNPJ e clique em entrar</string>
 
 </resources>

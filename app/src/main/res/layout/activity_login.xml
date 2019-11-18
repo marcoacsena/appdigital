@@ -22,7 +22,7 @@
         android:layout_height="20dp"
         android:layout_weight="0.6"
         android:background="@drawable/menu"
-        android:onClick="menu" />
+        />
 
         <ImageView
             android:layout_width="wrap_content"
@@ -54,15 +54,9 @@
 
         <EditText
             android:id="@+id/editCpf"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginTop="80dp"
-            android:gravity="center"
-            android:hint="Digite o seu CPF ou CNPJ e clique em entrar"
-            android:inputType="number"
-            android:textSize="16sp"
+            android:hint="@string/digite_cpf_cnpj"
 
-            />
+            style="@style/EditTextCPFLogin" />
 
         <Button
             android:id="@+id/btnAcessarListaMensagens"

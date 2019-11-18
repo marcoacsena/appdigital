@@ -24,4 +24,20 @@
         <item name="android:background">@drawable/button</item>
     </style>
 
+    <style name="EditTextCPFLogin">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginTop">80dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:inputType">number</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="ButtonVoltar">
+        <item name="android:layout_width">15dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_weight">0.6</item>
+        <item name="android:background">@drawable/botao_voltar_azul</item>
+    </style>
+
 </resources>

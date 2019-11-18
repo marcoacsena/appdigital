@@ -18,11 +18,8 @@
 
         <Button
             android:id="@+id/btnVoltarTelaListaDeMensagens"
-            android:layout_width="15dp"
-            android:layout_height="20dp"
-            android:layout_weight="0.6"
-            android:background="@drawable/botao_voltar_azul"
-            android:onClick="voltarTelaListaDeMensagens" />
+            android:onClick="voltarTelaListaDeMensagens"
+            style="@style/ButtonVoltar" />
 
         <TextView
             android:layout_width="match_parent"

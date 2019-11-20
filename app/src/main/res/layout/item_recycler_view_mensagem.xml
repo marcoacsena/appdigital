@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#ffffff">
+    android:background="#ffffff"
+    android:orientation="horizontal">
 
     <LinearLayout
         android:layout_width="0dp"
@@ -11,12 +11,11 @@
         android:layout_weight="2"
         android:padding="5dp">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/notificacao"
-        android:id="@+id/ivTipoDocumento"
-        />
+        <ImageView
+            android:id="@+id/ivTipoDocumento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/notificacao" />
     </LinearLayout>
 
     <LinearLayout
@@ -32,20 +31,18 @@
             android:orientation="horizontal">
 
             <TextView
+                android:id="@+id/tvTipoDocumento"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Notificação"
-                android:textStyle="bold"
-                android:id="@+id/tvTipoDocumento"
-                />
+                android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/tvDataEntregaDocumento"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="17/09/2019"
                 android:gravity="end"
-                android:id="@+id/tvDataEntregaDocumento"
-                />
+                android:text="17/09/2019" />
         </LinearLayout>
 
         <LinearLayout
@@ -54,18 +51,16 @@
             android:orientation="horizontal">
 
             <TextView
+                android:id="@+id/tvCidadeEmissorDocumento"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="São Paulo, "
-                android:id="@+id/tvCidadeEmissorDocumento"
-                />
+                android:text="São Paulo, " />
 
             <TextView
+                android:id="@+id/tvDataDocumento"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="30 de janeiro de 2019"
-                android:id="@+id/tvDataDocumento"
-                />
+                android:text="30 de janeiro de 2019" />
         </LinearLayout>
 
 
@@ -80,10 +75,9 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/seta_de_avanco"
-            android:layout_marginTop="10dp"
             android:layout_marginLeft="10dp"
-            />
+            android:layout_marginTop="10dp"
+            android:src="@drawable/seta_de_avanco" />
 
 
     </LinearLayout>

@@ -11,32 +11,30 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="120dp"
-        android:orientation="horizontal"
         android:background="@drawable/logo_santander_dois"
+        android:orientation="horizontal"
         android:padding="5dp"
 
         >
 
-    <Button
-        android:id="@+id/btnVoltarTelaEmissores"
-        android:layout_width="15dp"
-        android:layout_height="20dp"
-        android:layout_marginTop="7dp"
-        android:layout_marginLeft="3dp"
-        android:background="@drawable/botao_voltar_azul"
-        android:onClick="voltarTelaEmissores"
+        <Button
+            android:id="@+id/btnVoltarTelaEmissores"
+            android:layout_width="15dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/botao_voltar_azul"
+            android:onClick="voltarTelaEmissores"
 
-        />
+            />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="7dp"
-            android:layout_marginRight="5dp"
-            android:text="Minhas Mensagens"
+            android:layout_marginRight="10dp"
             android:gravity="center"
-
-            />
+            android:text="Minhas Mensagens" />
 
     </LinearLayout>
 

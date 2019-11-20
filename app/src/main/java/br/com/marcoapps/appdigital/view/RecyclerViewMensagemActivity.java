@@ -23,6 +23,7 @@ import br.com.marcoapps.appdigital.adapter.AdapterListaMensagem;
 import br.com.marcoapps.appdigital.model.ConfiguracaoMensagem;
 import br.com.marcoapps.appdigital.uteis.RecyclerItemClickListener;
 
+
 public class RecyclerViewMensagemActivity extends AppCompatActivity {
 
     private Activity activity;
@@ -36,14 +37,23 @@ public class RecyclerViewMensagemActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recycler_view_mensagem);
 
+        initComponents();
+
+    }
+
+    private void initComponents() {
+
         btnVoltarTelaEmissores = findViewById(R.id.btnVoltarTelaEmissores);
-        rvMensagem =findViewById(R.id.rvMensagem);
-//
-//        //Criar lista de filmes
-          criarListaConfiguracaoDeMensagens();
-//
+        rvMensagem = findViewById(R.id.rvMensagem);
+        //Criar lista de mensagens
+        criarListaConfiguracaoDeMensagens();
+        configurarAdapter();
+    }
+
+    private void configurarAdapter() {
+
         //Configurar adapter
-        AdapterListaMensagem adapterListaMensagem= new AdapterListaMensagem(listaConfiguracaoDeMensagens);
+        AdapterListaMensagem adapterListaMensagem = new AdapterListaMensagem(listaConfiguracaoDeMensagens);
 //
         //Configurar recyclerview
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getApplicationContext());
@@ -100,7 +110,7 @@ public class RecyclerViewMensagemActivity extends AppCompatActivity {
     }
 
 
-    public void voltarTelaEmissores(View v){
+    public void voltarTelaEmissores(View v) {
 
         this.finish();
     }

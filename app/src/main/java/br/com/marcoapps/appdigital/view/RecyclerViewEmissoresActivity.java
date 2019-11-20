@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -33,14 +34,19 @@ public class RecyclerViewEmissoresActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recycler_view_emissores);
+        initComponents();
+    }
 
+    private void initComponents() {
         rvEmissores = findViewById(R.id.rvMensagem);
         btnVoltarTelaLogin = findViewById(R.id.btnVoltarTelaLogin);
+        configurarAdapter();
+    }
 
+    //Criar lista de mensagens
+    //criarListaDeMensagens();
 
-        //Criar lista de filmes
-        //criarListaDeMensagens();
-
+    private void configurarAdapter() {
         //Configurar adapter
         AdapterMensagem adapterMensagem = new AdapterMensagem();
 
@@ -48,7 +54,7 @@ public class RecyclerViewEmissoresActivity extends AppCompatActivity {
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getApplicationContext());
         rvEmissores.setLayoutManager(layoutManager);
         rvEmissores.setHasFixedSize(true);
-        rvEmissores.setAdapter( adapterMensagem);
+        rvEmissores.setAdapter(adapterMensagem);
 
         //Configurar eventos de click
 
@@ -92,7 +98,8 @@ public class RecyclerViewEmissoresActivity extends AppCompatActivity {
 //
 //    }
 
-    public void voltarTelaLogin(View v){
+    public void voltarTelaLogin(View v) {
+
         this.finish();
     }
 
